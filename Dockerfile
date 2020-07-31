@@ -15,6 +15,7 @@ COPY files/sshd_config /etc/ssh/sshd_config
 COPY files/create-sftp-user /usr/local/bin/
 COPY files/entrypoint /
 
+USER 1000
 EXPOSE 22022
 
 ENTRYPOINT ["/entrypoint"]
